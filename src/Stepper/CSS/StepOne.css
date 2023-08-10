@@ -1,0 +1,156 @@
+@keyframes gradientAnimation {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(45deg, #000004, #363f89);
+    background-size: 200% 100%;
+    animation: gradientAnimation 20s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+}
+
+#logo {
+    flex: 2; 
+    background-image: url('../../../public/logo.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    margin: 100px auto;
+    position: relative;
+    background-color: #3c4a88;
+    color: #d0cde0;
+    min-height: 540px;
+}
+
+.left-section, .middle-section, .right-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-section {
+    flex: 1; 
+}
+
+.middle-section {
+    flex: 3; 
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #a4aaff;
+    border: none;
+    outline: none;
+}
+
+select {
+    width: 200px;
+    font-size: 18px;
+}
+
+textarea {
+    resize: vertical; /* Yalnızca dikey (aşağı doğru) yönde genişlemeye izin verir */
+    max-height: 200px;
+}
+
+option:checked {
+    background-color: #6b78d8;
+    color: #d0cde0;
+  }
+
+.right-section {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #d0cde0;
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+}
+
+.next-button:hover {
+    background-color: #6b78d8;
+}
+
+.custom-checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px; /* CheckBox metni için yazı boyutu */
+  }
+  
+  .custom-checkbox {
+    width: 20px; /* CheckBox'ın genişliği */
+    height: 20px; /* CheckBox'ın yüksekliği */
+    margin-right: 10px; /* CheckBox ile metin arasındaki boşluk */
+    cursor: pointer;
+    transform: scale(1.5); /* CheckBox'ı 1.5 kat büyütme */
+  }
+  
+  /* CheckBox işareti için stil */
+  .custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left:6px;
+    top: 6px;
+    width: 8px; /* Check işaretinin genişliği */
+    height: 16px; /* Check işaretinin yüksekliği */
+    border: solid #333;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  .error-message {
+    color: #ffb7df;
+  }
