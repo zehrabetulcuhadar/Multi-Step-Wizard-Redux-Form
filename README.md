@@ -6,7 +6,6 @@ Bu proje, React ve Redux kullanılarak geliştirilmiş, kullanıcı verilerini �
 - Çok Adımlı Form: Kullanıcıdan bilgi toplamak için adım adım ilerlenir.
 - Formik: Form yönetimi için güçlü ve esnek bir kütüphane.
 - Yup: Giriş doğrulama kurallarını belirlemek için kullanılır.
-<br>
 
 ## Kullanılan Teknolojiler
 - React
